@@ -1,1 +1,14 @@
-%h3 Hello, World
+%h3 Hello, Developalooza!
+
+.theYearWeMakeContact
+  %button.toggleBtn Push me
+  .contactForm
+    .messageBox
+    = form_tag "contact/create" do
+      = label_tag :email
+      = text_field_tag :email
+      %br/
+      = label_tag :message
+      = text_area_tag :message
+      %br/
+      = submit_tag "Send"
