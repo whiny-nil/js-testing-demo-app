@@ -1,0 +1,65 @@
+.theYearWeMakeContact {
+  .contactForm {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    input[type=submit] {
+      margin-left: 20%;
+    }
+    input[type=text] {
+      float: left;
+      box-sizing: border-box;
+      width: 75%;
+    }
+    label {
+      float: left;
+      box-sizing: border-box;
+      padding-right: 10px;
+      width: 20%;
+      text-align: right;
+    }
+    .messageBox {
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      margin-left: 20%;
+      padding: 10px;
+      width: 75%;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: .8em;
+      &.notice {
+        color: green;
+        border-color: green;
+        background: lightgreen;
+      }
+      &.warning {
+        color: red;
+        border-color: red;
+        background: pink;
+      }
+    }
+    .row {
+      margin-bottom: 10px;
+      &:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0px;
+        content: "";
+        font-size: 0px;
+      }
+    }
+    textarea {
+      float: left;
+      box-sizing: border-box;
+      width: 75%;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .toggleBtn {
+    margin-bottom: 20px;
+  }
+}
