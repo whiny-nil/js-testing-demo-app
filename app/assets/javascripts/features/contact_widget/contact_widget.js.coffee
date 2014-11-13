@@ -24,4 +24,14 @@ class @ContactWidget
 
   processForm: (e) =>
     e.preventDefault()
-    console.log "here"
+    if @formIsValid()
+      # submit
+    else
+      # show error message
+
+  formIsValid: =>
+    @emailValidator()
+    # some stuff
+    #
+  emailValidator: =>
+    'here'
