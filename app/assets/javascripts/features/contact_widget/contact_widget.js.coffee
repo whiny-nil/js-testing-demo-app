@@ -11,9 +11,17 @@ class @ContactWidget
 
   setupElements: =>
     @$widget = $('.contact-widget')
-    @$toggleBtn = @$widget.children('.toggle-btn')
-    @$form = @$widget.children('.form')
+    @$toggleBtn = @$widget.find('.toggle-btn')
+    @$form = @$widget.find('.form')
+    @$submitBtn = @$widget.find('input[type=submit]')
 
   setupEvents: =>
-    @$toggleBtn.on 'click', =>
-      @$form.toggle()
+    @$toggleBtn.on 'click', @toggleForm
+    @$submitBtn.on 'click', @processForm
+
+  toggleForm: =>
+    @$form.toggle()
+
+  processForm: (e) =>
+    e.preventDefault()
+    console.log "here"

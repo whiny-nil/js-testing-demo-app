@@ -37,6 +37,8 @@ end
 
 group :development, :test do
   gem 'konacha'
+  gem 'sinon-rails'
+  gem 'sinon-chai-rails'
 end
 
 # Use ActiveModel has_secure_password

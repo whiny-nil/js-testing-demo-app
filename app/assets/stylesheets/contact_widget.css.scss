@@ -1,5 +1,6 @@
 .contact-widget {
   .form {
+    display: none;
     padding: 20px;
     border: 1px solid black;
     border-radius: 5px;
@@ -19,6 +20,7 @@
       text-align: right;
     }
     .message-box {
+      display: none;
       box-sizing: border-box;
       margin-bottom: 20px;
       margin-left: 20%;
@@ -29,14 +31,14 @@
       font-weight: bold;
       font-size: .8em;
       &.notice {
-        color: green;
         border-color: green;
         background: lightgreen;
+        color: green;
       }
       &.warning {
-        color: red;
         border-color: red;
         background: pink;
+        color: red;
       }
     }
     .row {
@@ -55,9 +57,6 @@
       box-sizing: border-box;
       width: 75%;
     }
-  }
-  .hide {
-    display: none;
   }
   .toggle-btn {
     margin-bottom: 20px;
