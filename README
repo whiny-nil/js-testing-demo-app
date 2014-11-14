@@ -29,31 +29,6 @@ JavaScript Testing
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Choices
 -------
 
@@ -70,31 +45,6 @@ My Choice
 ---------
 
 * mocha + chai, bundled via konacha
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,7 +76,6 @@ Syntax
         #indexOf:
           returns -1 when value is not present
 
-
 * chai provides assertion syntax:
 
   - assert style, eg assert.equal(foo.bar(), "baz");
@@ -135,31 +84,7 @@ Syntax
 
   - expect style, eg expect(foo.bar).to.equal("baz);
 
-
 * sinon provides mocks, stubs, spies, fakes, etc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Interesting Examples
@@ -189,31 +114,6 @@ Interesting Examples
 
 
 * AJAX Requests and Responses
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Conclusions
@@ -246,30 +146,6 @@ Conclusions
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Discussion
 ----------
 
@@ -279,6 +155,6 @@ Discussion
 
 * Risk/reward
 
-* "Test Tune-Ups"
+* "Test Trials"
 
-* Talk to me if you need help
+* I'm here to help
