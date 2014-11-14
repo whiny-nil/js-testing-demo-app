@@ -1,0 +1,284 @@
+JavaScript Testing
+==================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Choices
+-------
+
+* karma - http://karma-runner.github.io/0.12/index.html
+
+* jasmne - http://jasmine.github.io/
+
+* mocha + chai - http://mochajs.org/ + http://chaijs.com/
+
+... plus sinon - http://sinonjs.org/
+
+
+My Choice
+---------
+
+* mocha + chai, bundled via konacha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Syntax
+------
+
+* mocha provides testing framework syntax:
+
+  - describe()
+
+  - it()
+
+  - before(), beforeEach(), after(), afterEach()
+
+  - handles output styles
+    eg dot: .....F....
+    eg spec:
+      Array:
+        #indexOf:
+          returns -1 when value is not present
+
+
+* chai provides assertion syntax:
+
+  - assert style, eg assert.equal(foo.bar(), "baz");
+
+  - should style, eg foo.bar().should.equal("baz");
+
+  - expect style, eg expect(foo.bar).to.equal("baz);
+
+
+* sinon provides mocks, stubs, spies, fakes, etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interesting Examples
+--------------------
+
+* Unit Tests
+
+
+* DOM Manipulation
+
+  - unless you are testing in browser, you need to BYODOM to your tests
+
+  - option 1: DOM fixtures
+
+  - option 2: make your widgets render their own DOM
+
+  - pros / cons?
+
+
+* Dependency Injection
+
+
+* Spies, mocks, etc
+
+
+* Dealing with bound functions
+
+
+* AJAX Requests and Responses
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusions
+-----------
+
+* JS testing is easy
+
+* JS testing is useful
+
+* JS testing tools are  mature
+
+* JS testing is (dare I say it?) fun
+
+* JS testing is something we should be doing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discussion
+----------
+
+* Thoughts on JS testing?
+
+* Current state of testing at f[e]
+
+* Risk/reward
+
+* "Test Tune-Ups"
+
+* Talk to me if you need help
