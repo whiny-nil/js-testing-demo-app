@@ -31,8 +31,7 @@ class @ContactWidget
     e.preventDefault()
     @$messageBox.hide()
     if @formIsValid()
-      # submit
-      @showNotice "Thanks! We'll get back to you soon!"
+      @submitForm()
     else
       msg = "<ul>"
       msg += "<li>#{error}</li>" for error in @errors
@@ -70,3 +69,17 @@ class @ContactWidget
     @$messageBox.addClass "notice"
     @$messageBox.html(msg)
     @$messageBox.show()
+
+  submitForm: =>
+    data =
+      email: @$emailField.val()
+      message: @$messageField.val()
+    $.post('/contact/create', data, @successHandler, 'json').
+      fail(=> @showWarning "An error occured")
+
+  successHandler: (data) =>
+    console.log data
+    if data.status == "OK"
+      @showNotice data.message
+    else
+      @showWarning data.message
